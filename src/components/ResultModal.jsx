@@ -20,12 +20,11 @@ const ResultModal = forwardRef(
       ? ((1 - remainingTime / (targetTime * 1000)) * 100).toFixed(0)
       : 0;
 
-    // Determine the result message based on the score.
+    // Determine the result message based on the score. (update in future to calculate only when timer stopped)
     let resultMessage = selectMessage(score);
-    console.log(resultMessage);
 
     // STYLING
-    // Determine dynamic styles based on score value.
+    // Determine dynamic styles based on score value. (update in future to calculate only when timer stopped)
     const calculateBackgroundColor = (score) => {
       const red = Math.round((100 - score) * 2.55);
       const green = Math.round(score * 2.55);

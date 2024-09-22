@@ -1,7 +1,7 @@
 export default function selectMessage(score) {
   let resultMessage = "";
   const messages = {
-    100: ["Perfect Score!", "Perfection feels good"],
+    99: ["Perfect Score!", "Perfection feels good"],
     90: [
       "WOW!",
       "Lightning Fast!",
@@ -29,7 +29,7 @@ export default function selectMessage(score) {
   // Determine the score and corresponding message key.
   let messageKey;
 
-  if (score >= 100) messageKey = 100;
+  if (score >= 99) messageKey = 99;
   else if (score >= 90) messageKey = 90;
   else if (score >= 80) messageKey = 80;
   else if (score >= 70) messageKey = 70;
