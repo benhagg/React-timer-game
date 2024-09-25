@@ -22,7 +22,7 @@ export default function Player() {
           ref={pName}
           type="text"
           onKeyDown={handleKeyDown}
-          placeholder="Change name and press enter"
+          placeholder="Press enter to change"
         />
       </p>
     </section>
